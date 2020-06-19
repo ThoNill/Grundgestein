@@ -144,7 +144,7 @@ public abstract class AbstractTexter<T extends AbstractTexter<?>> {
 	}
 
 	public T a(@NonNull char[] str, int offset, int len) {
-		checkIllegalArgument(offset >= 0 && len >= 0 && offset + len < str.length);
+		checkIllegalArgument(offset >= 0 && len >= 0 && offset + len <= str.length);
 
 		builder.ensureCapacity(builder.length() + len);
 		int end = offset + len;
