@@ -27,5 +27,8 @@ public interface EntityZelt {
 	default LocalDate convertToLocalDate(String value) {
 		return LocalDate.parse(value);
 	}
+	
+	
+
 
 }
